@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Dosis&family=Libre+Baskerville&family=Playfair+Display:wght@500&display=swap");
+body {
+  background-color: antiquewhite;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: "Libre Baskerville", serif;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  height: 66px;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+nav ul li {
+  padding: 0 13px;
+}
+.brand img {
+  width: 45px;
+  height: 45px;
+  padding: 0 8px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+.bottom {
+  position: sticky;
+  height: 130px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+.container {
+  min-height: 72vh;
+  background-color: black;
+  color: white;
+  font-family: "Dosis", sans-serif;
+  display: flex;
+  margin: 23px auto;
+  width: 70%;
+  border-radius: 12px;
+  padding: 34px;
+  background-image: url("./images/2099444.jpg");
+}
+#myProgressbar {
+  width: 80vw;
+  cursor: pointer;
+}
+.icons {
+  margin-top: 14px;
+}
+.icons i {
+  cursor: pointer;
+}
+.music {
+  height: 70px;
+  width: 60;
+}
+.songitem {
+  height: 50px;
+  display: flex;
+  background-color: white;
+  color: black;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+.songitem img {
+  width: 40px;
+  margin: 0 23px;
+  border-radius: 50px;
+}
+.timestamp {
+  margin: 0 23px;
+}
+.timestamp i {
+  margin: 0 5px;
+  cursor: pointer;
+}
+.songitemcontainer {
+  margin-top: 74px;
+}
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  font-family: "Dosis", sans-serif;
+}
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+body {
+  background-color: antiquewhite;
+  font-family: "Dosis", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  height: 66px;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    height: auto;
+  }
+  nav ul li {
+    padding: 10px 0;
+    text-align: center;
+  }
+  .brand {
+    font-size: 1rem;
+  }
+}
+
+.container {
+  min-height: 72vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  margin: 23px auto;
+  width: 70%;
+  border-radius: 12px;
+  padding: 34px;
+  background-image: url("./images/2099444.jpg");
+}
+
+.songitemcontainer {
+  margin-top: 74px;
+}
+
+.songitem {
+  height: 50px;
+  display: flex;
+  background-color: white;
+  color: black;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+
+@media (max-width: 768px) {
+  .songitem {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+  }
+  .songitem img {
+    margin: 10px 0;
+  }
+}
+
+#myProgressbar {
+  width: 80vw;
+  cursor: pointer;
+}
+
+.icons i {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  font-family: "Dosis", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .icons {
+    flex-direction: column;
+  }
+  .icons i {
+    margin: 10px 0;
+  }
+  .songInfo {
+    text-align: center;
+  }
+  .songInfo img {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
